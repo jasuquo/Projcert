@@ -1,9 +1,8 @@
-FROM webimp/php-72-apache
+FROM php:7.0-apache
 
 WORKDIR .
 
 COPY . /var/www/html
 
-RUN 'service httpd start'
-
-EXPOSE 8080
+EXPOSE
+ - 8080:80
