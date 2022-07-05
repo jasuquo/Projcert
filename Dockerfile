@@ -4,7 +4,5 @@ WORKDIR  /var/www/html
 
 COPY ./  /var/www/html
 
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-
 EXPOSE
  - 8080:80
